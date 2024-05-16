@@ -8,18 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		E3FE113C2BF4B2430013DA0F /* InventaireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE113B2BF4B2430013DA0F /* InventaireApp.swift */; };
-		E3FE113E2BF4B2430013DA0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE113D2BF4B2430013DA0F /* ContentView.swift */; };
 		E3FE11402BF4B2440013DA0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3FE113F2BF4B2440013DA0F /* Assets.xcassets */; };
 		E3FE11442BF4B2440013DA0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3FE11432BF4B2440013DA0F /* Preview Assets.xcassets */; };
+		E3FE114F2BF4B3C00013DA0F /* CheckScannerDispo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE114A2BF4B3C00013DA0F /* CheckScannerDispo.swift */; };
+		E3FE11502BF4B3C00013DA0F /* EspaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE114B2BF4B3C00013DA0F /* EspaceModel.swift */; };
+		E3FE11512BF4B3C00013DA0F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE114C2BF4B3C00013DA0F /* Item.swift */; };
+		E3FE11522BF4B3C00013DA0F /* Maison.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE114D2BF4B3C00013DA0F /* Maison.swift */; };
+		E3FE11552BF4B4460013DA0F /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE11542BF4B4450013DA0F /* Extention.swift */; };
+		E3FE11572BF4B4560013DA0F /* AppelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE11562BF4B4560013DA0F /* AppelAPI.swift */; };
+		E3FE115D2BF511850013DA0F /* AjoutEspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE11582BF511850013DA0F /* AjoutEspace.swift */; };
+		E3FE115E2BF511850013DA0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE11592BF511850013DA0F /* ContentView.swift */; };
+		E3FE115F2BF511850013DA0F /* DataScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE115A2BF511850013DA0F /* DataScannerView.swift */; };
+		E3FE11602BF511850013DA0F /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE115B2BF511850013DA0F /* ItemView.swift */; };
+		E3FE11622BF511AC0013DA0F /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE11612BF511AC0013DA0F /* Scanner.swift */; };
+		E3FE11642BF511B50013DA0F /* VueItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE11632BF511B50013DA0F /* VueItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E37A9B4A2BF519D100F43675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E3FE11382BF4B2430013DA0F /* Inventaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inventaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FE113B2BF4B2430013DA0F /* InventaireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventaireApp.swift; sourceTree = "<group>"; };
-		E3FE113D2BF4B2430013DA0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E3FE113F2BF4B2440013DA0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3FE11412BF4B2440013DA0F /* Inventaire.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Inventaire.entitlements; sourceTree = "<group>"; };
 		E3FE11432BF4B2440013DA0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E3FE114A2BF4B3C00013DA0F /* CheckScannerDispo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckScannerDispo.swift; sourceTree = "<group>"; };
+		E3FE114B2BF4B3C00013DA0F /* EspaceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EspaceModel.swift; sourceTree = "<group>"; };
+		E3FE114C2BF4B3C00013DA0F /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		E3FE114D2BF4B3C00013DA0F /* Maison.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maison.swift; sourceTree = "<group>"; };
+		E3FE11542BF4B4450013DA0F /* Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		E3FE11562BF4B4560013DA0F /* AppelAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppelAPI.swift; sourceTree = "<group>"; };
+		E3FE11582BF511850013DA0F /* AjoutEspace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjoutEspace.swift; sourceTree = "<group>"; };
+		E3FE11592BF511850013DA0F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E3FE115A2BF511850013DA0F /* DataScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataScannerView.swift; sourceTree = "<group>"; };
+		E3FE115B2BF511850013DA0F /* ItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		E3FE11612BF511AC0013DA0F /* Scanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		E3FE11632BF511B50013DA0F /* VueItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VueItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +75,10 @@
 		E3FE113A2BF4B2430013DA0F /* Inventaire */ = {
 			isa = PBXGroup;
 			children = (
+				E37A9B4A2BF519D100F43675 /* Info.plist */,
+				E3FE115C2BF511850013DA0F /* View */,
+				E3FE114E2BF4B3C00013DA0F /* Model */,
 				E3FE113B2BF4B2430013DA0F /* InventaireApp.swift */,
-				E3FE113D2BF4B2430013DA0F /* ContentView.swift */,
 				E3FE113F2BF4B2440013DA0F /* Assets.xcassets */,
 				E3FE11412BF4B2440013DA0F /* Inventaire.entitlements */,
 				E3FE11422BF4B2440013DA0F /* Preview Content */,
@@ -69,6 +94,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E3FE114E2BF4B3C00013DA0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E3FE11542BF4B4450013DA0F /* Extention.swift */,
+				E3FE114A2BF4B3C00013DA0F /* CheckScannerDispo.swift */,
+				E3FE114B2BF4B3C00013DA0F /* EspaceModel.swift */,
+				E3FE11562BF4B4560013DA0F /* AppelAPI.swift */,
+				E3FE114C2BF4B3C00013DA0F /* Item.swift */,
+				E3FE114D2BF4B3C00013DA0F /* Maison.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E3FE115C2BF511850013DA0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3FE11582BF511850013DA0F /* AjoutEspace.swift */,
+				E3FE11632BF511B50013DA0F /* VueItems.swift */,
+				E3FE11612BF511AC0013DA0F /* Scanner.swift */,
+				E3FE11592BF511850013DA0F /* ContentView.swift */,
+				E3FE115A2BF511850013DA0F /* DataScannerView.swift */,
+				E3FE115B2BF511850013DA0F /* ItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,6 +130,7 @@
 				E3FE11342BF4B2430013DA0F /* Sources */,
 				E3FE11352BF4B2430013DA0F /* Frameworks */,
 				E3FE11362BF4B2430013DA0F /* Resources */,
+				E3FE11532BF4B3DD0013DA0F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -134,13 +186,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E3FE11532BF4B3DD0013DA0F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E3FE11342BF4B2430013DA0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3FE113E2BF4B2430013DA0F /* ContentView.swift in Sources */,
+				E3FE11512BF4B3C00013DA0F /* Item.swift in Sources */,
+				E3FE115D2BF511850013DA0F /* AjoutEspace.swift in Sources */,
+				E3FE115F2BF511850013DA0F /* DataScannerView.swift in Sources */,
+				E3FE11642BF511B50013DA0F /* VueItems.swift in Sources */,
+				E3FE11522BF4B3C00013DA0F /* Maison.swift in Sources */,
 				E3FE113C2BF4B2430013DA0F /* InventaireApp.swift in Sources */,
+				E3FE11502BF4B3C00013DA0F /* EspaceModel.swift in Sources */,
+				E3FE11602BF511850013DA0F /* ItemView.swift in Sources */,
+				E3FE115E2BF511850013DA0F /* ContentView.swift in Sources */,
+				E3FE11572BF4B4560013DA0F /* AppelAPI.swift in Sources */,
+				E3FE114F2BF4B3C00013DA0F /* CheckScannerDispo.swift in Sources */,
+				E3FE11622BF511AC0013DA0F /* Scanner.swift in Sources */,
+				E3FE11552BF4B4460013DA0F /* Extention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +267,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -245,7 +328,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -274,6 +357,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Inventaire/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Nous avons besoins de la caméra pour sanner les codes barre";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -312,6 +397,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Inventaire/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Nous avons besoins de la caméra pour sanner les codes barre";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct InventaireApp: App {
+    @StateObject private var check = CheckScannerDispo()
     var body: some Scene {
+
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(check).task {
+                await check.requestDataScannerAccessStatus()
+            }.modelContainer(for: Maison.self)
         }
     }
 }
