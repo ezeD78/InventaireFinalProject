@@ -19,7 +19,7 @@ struct VueItems: View {
 
                 HStack {
 
-                        Text(items[index].unite.description).font(.system(size: 17))
+                    Text(items[index].unite.description).font(.system(size: 17))
 
                     AsyncImage(url: URL(string: items[index].urlImage)) { image in
                         image.resizable().scaledToFit().frame( maxWidth: 100, maxHeight: 85, alignment: .center)
@@ -123,14 +123,14 @@ struct VueItems: View {
         let indexes = Array(index)
 
         // Parcourir les indexes pour ajouter les éléments à removeItem
-        for index in indexes {
-            if index < items.count {
-                removeItem.append(items[index])
-            }
+        for index in indexes where index < items.count {
+
+            removeItem.append(items[index])
         }
-        // removeItem.append(items.inde)
         items.remove(atOffsets: index)
     }
+    // removeItem.append(items.inde)
+
 }
 
 // #Preview {

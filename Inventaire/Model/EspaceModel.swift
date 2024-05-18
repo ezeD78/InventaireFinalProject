@@ -34,6 +34,11 @@ class EspaceModel: ObservableObject, Equatable {
         self.isFirstEspaceModel = isfirstEspaceModel
 
     }
+    init() {
+        self.nom = ""
+        self.couleur = ["": 0]
+        self.imageName = ""
+    }
     static func == (lhs: EspaceModel, rhs: EspaceModel) -> Bool {
         return lhs.nom ==  rhs.nom
     }

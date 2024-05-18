@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E37A9B4C2BF60BA900F43675 /* EspaceSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37A9B4B2BF60BA900F43675 /* EspaceSelection.swift */; };
 		E3FE113C2BF4B2430013DA0F /* InventaireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE113B2BF4B2430013DA0F /* InventaireApp.swift */; };
 		E3FE11402BF4B2440013DA0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3FE113F2BF4B2440013DA0F /* Assets.xcassets */; };
 		E3FE11442BF4B2440013DA0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3FE11432BF4B2440013DA0F /* Preview Assets.xcassets */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		E37A9B4A2BF519D100F43675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E37A9B4B2BF60BA900F43675 /* EspaceSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EspaceSelection.swift; sourceTree = "<group>"; };
 		E3FE11382BF4B2430013DA0F /* Inventaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inventaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FE113B2BF4B2430013DA0F /* InventaireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventaireApp.swift; sourceTree = "<group>"; };
 		E3FE113F2BF4B2440013DA0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,12 +112,13 @@
 		E3FE115C2BF511850013DA0F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E3FE11592BF511850013DA0F /* ContentView.swift */,
+				E37A9B4B2BF60BA900F43675 /* EspaceSelection.swift */,
 				E3FE11582BF511850013DA0F /* AjoutEspace.swift */,
+				E3FE115B2BF511850013DA0F /* ItemView.swift */,
 				E3FE11632BF511B50013DA0F /* VueItems.swift */,
 				E3FE11612BF511AC0013DA0F /* Scanner.swift */,
-				E3FE11592BF511850013DA0F /* ContentView.swift */,
 				E3FE115A2BF511850013DA0F /* DataScannerView.swift */,
-				E3FE115B2BF511850013DA0F /* ItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				E3FE11522BF4B3C00013DA0F /* Maison.swift in Sources */,
 				E3FE113C2BF4B2430013DA0F /* InventaireApp.swift in Sources */,
 				E3FE11502BF4B3C00013DA0F /* EspaceModel.swift in Sources */,
+				E37A9B4C2BF60BA900F43675 /* EspaceSelection.swift in Sources */,
 				E3FE11602BF511850013DA0F /* ItemView.swift in Sources */,
 				E3FE115E2BF511850013DA0F /* ContentView.swift in Sources */,
 				E3FE11572BF4B4560013DA0F /* AppelAPI.swift in Sources */,

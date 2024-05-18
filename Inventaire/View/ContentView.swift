@@ -14,8 +14,11 @@ struct ContentView: View {
     @State var ajout = false
     @EnvironmentObject var check: CheckScannerDispo
     @Environment(\.modelContext) var context
+    @State var editing = false
     @State private var nomMaison = ""
     @State var maison: Maison?
+    @State var espaces: [EspaceModel] = []
+    @State private var isEditing = false
 
     var body: some View {
         VStack {
@@ -32,11 +35,19 @@ struct ContentView: View {
                                 ]) {
                                     // Bon a savoir .indices plutôt que .count améliore les performance
 
-                                    ForEach(maisons[0].espaces.indices, id: \.self) { index in
-                                        NavigationLink(value: maisons[0].espaces[index] ) {
-                                            Espaces(espaceModel: maisons[0].espaces[index]).padding(.bottom).foregroundColor(.white)
+                                    ForEach(espaces.indices, id: \.self) { index in
+                                        NavigationLink(value: espaces[index] ) {
+                                            Espaces(espaceModel: espaces[index]).padding(.bottom).foregroundColor(.white)
                                         }
+                                        if isEditing {
+                                            Button(action: {
+                                                espaces.remove(at: index)
+                                                maisons[0].espaces = espaces
 
+                                            }, label: {
+                                                Text("Suprimmer").foregroundStyle(Color(.red))
+                                            })
+                                        }
                                     }
 
                                 }.padding(.top).navigationDestination(for: EspaceModel.self ) { index in
@@ -51,35 +62,42 @@ struct ContentView: View {
                                     Label("Ajouter une catégorie", systemImage: "plus.app").font(.system(size: 25))
                                 }).toolbar(content: {
                                     ToolbarItem(placement: .topBarTrailing) {
-                                        Button(action: {}, label: {
+                                        Button(action: {
+                                            isEditing.toggle()
+                                        }, label: {
                                             Label("Menu", systemImage: "line.3.horizontal")
                                         })
                                     }
                                 })
-                            } else {
-                                VStack {
-                                    Text("Comment s'appelle votre maison ?")
-                                    TextField(text: $nomMaison) {
-                                        Text("nom de votre maison ")
-                                    }.onSubmit {
 
-                                        context.insert(Maison(nom: nomMaison))
-//                                        try!
-//                                        context.save()
+                                .onAppear {
+                                    espaces = maisons[0].espaces
+                                }.onChange(of: maisons[0].espaces) {
+                                    espaces = maisons[0].espaces
+                                }} else {
+                                    VStack {
+                                        Text("Comment s'appelle votre maison ?")
+                                        TextField(text: $nomMaison) {
+                                            Text("nom de votre maison ")
+                                        }.onSubmit {
+
+                                            context.insert(Maison(nom: nomMaison))
+                                            //                                        try!
+                                            //                                        context.save()
+
+                                        }
 
                                     }
-
                                 }
-                            }
                         }
-                    }.sheet(item: $maison, content: { house in
-                        AjoutEspace(maison: house)
-                    })
-                    //                    .sheet(isPresented: $ajout, content: {
-                    //                        //AjoutEspace(maison: $maison)
-                    //                       // AjoutEspace(maison: ).modelContainer(for : EspaceModel.self)
-                    //                    })
-                }
+                    }
+                }.sheet(item: $maison, content: { house in
+                    AjoutEspace(maison: house)
+                })
+                //                    .sheet(isPresented: $ajout, content: {
+                //                        //AjoutEspace(maison: $maison)
+                //                       // AjoutEspace(maison: ).modelContainer(for : EspaceModel.self)
+                //                    })
 
             } else {
 
@@ -90,23 +108,9 @@ struct ContentView: View {
             }
 
         }
-    }
-}
 
-// #Preview {
-//   
-// }
-
-struct Espaces: View {
-    var espaceModel: EspaceModel
-    var body: some View {
-        ZStack {
-            Circle().foregroundStyle(espaceModel.getColor())
-            VStack {
-                Image(systemName: espaceModel.imageName).resizable().scaledToFit().frame(width: 45)
-                Text(espaceModel.nom).font(.system(size: 13))
-            }
-
-        }.frame(width: 140)
+        // #Preview {
+        //
+        // }
     }
 }
